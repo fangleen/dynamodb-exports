@@ -1,0 +1,19 @@
+Description: An example DynamoDB table for storing Reviews on books
+Resources:
+  ReviewsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Reviews
+      KeySchema:
+        - AttributeName: User
+          KeyType: HASH
+        - AttributeName: Book
+          KeyType: RANGE
+      AttributeDefinitions:
+      - AttributeName: User
+        AttributeType: S
+      - AttributeName: Book
+        AttributeType: S
+      ProvisionedThroughput:
+       ReadCapacityUnits: 5
+       WriteCapacityUnits: 5

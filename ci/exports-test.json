@@ -1,0 +1,8 @@
+[{
+    "ParameterKey": "TableName",
+    "ParameterValue": "Reviews"
+},
+{
+    "ParameterKey": "MaxConsumedReadThroughput",
+    "ParameterValue": "0.3"
+}]

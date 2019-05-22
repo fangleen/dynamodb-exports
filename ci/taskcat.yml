@@ -1,0 +1,12 @@
+global:
+  marketplace-ami: false
+  owner: xxx@gmail.com
+  qsname: exports-test
+  regions:
+    - ap-northeast-1
+    - us-west-2
+  reporting: true
+tests:
+  shadowsocks:
+    parameter_input: exports-test.json
+    template_file: dynamodb-exports.yaml
